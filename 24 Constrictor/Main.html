@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+
+  <script>
+    // constrictor With Paramiters.
+
+
+    function Mobile(model_no) {
+
+      this.model = model_no;
+      this.price = function() {
+
+        document.write(this.model + " = Price Rs 3000" + "<br>");
+      }
+
+
+    }
+
+    var xiaomi = new Mobile("Redmi Note 9 Pro Max");
+
+    xiaomi.price();
+
+
+    var Nokia = new Mobile("3310");
+
+    Nokia.price();
+  </script>
+
+
+
+
+
+
+</head>
+
+<body>
+
+</body>
+
+</html>
