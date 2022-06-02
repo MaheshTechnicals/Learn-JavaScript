@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <script>
+    // construct object first.
+
+    function Mobile(model_no) {
+
+      this.model = model_no;
+      this.RAM = "8GB";
+      this.color = "Black";
+      this.price = function() {
+        document.write(this.model + " Price = 5000" + "<br>");
+      }
+
+    }
+
+    var xiaomi = new Mobile("Redmi Note 9 Pro Max");
+    var Nokia = new Mobile("3310");
+
+    // let's Run For in loop
+
+    for (var specs in xiaomi) {
+      // if use for hide Functions to show.
+      if (typeof xiaomi[specs] !== 'function') {
+        document.write(specs + " = " + xiaomi[specs] + "<br>");
+
+      }
+    }
+  </script>
+
+
+
+
+
+</head>
+
+<body>
+
+</body>
+
+</html>
