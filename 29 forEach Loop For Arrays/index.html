@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>for Each</title>
+</head>
+
+<body>
+
+  <script>
+    // forEach Loop use for arrays elements. As a name suggests it is use to do task on every item in that array.
+
+
+    let a = [1, 2, 3, 4, 5]
+    console.log(a)
+
+
+    // let's use forEach method to increse the number by 2 on every item in the array.
+
+    // First create a blank array.
+    let b = []
+
+    // now use forEach Loop to add 2 in every array items of a a variable.
+
+    Array.from(a).forEach((e) => {
+
+      // push +2 data in new array (b) )
+      b.push(e + 2)
+
+    })
+
+    console.log(b)
+  </script>
+
+</body>
+
+</html>
